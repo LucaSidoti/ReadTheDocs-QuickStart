@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setting Up Sphinx &mdash; Sphinx to Read the Docs: Complete Guide 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/code-tabs.css?v=1bc26e2f" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script src="_static/code-tabs.js?v=c983d12e"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to Write Documentation with reStructuredText" href="page_two.html" />
+    <link rel="prev" title="Sphinx to Read the Docs: Complete Guide" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Sphinx to Read the Docs: Complete Guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting Up Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_two.html">How to Write Documentation with reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#headings">Headings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#text-formatting">Text Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#blocks">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#custom-blocks">Custom Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#lists">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#figures-and-images">Figures and Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#code-blocks">Code Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#tabs">Tabs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_two.html#tips-and-best-practices">Tips and Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page_three.html">Deploying to Read the Docs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx to Read the Docs: Complete Guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Setting Up Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/page_one.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="setting-up-sphinx">
+<h1>Setting Up Sphinx<a class="headerlink" href="#setting-up-sphinx" title="Link to this heading"></a></h1>
+<p>In this section, we’ll guide you through the process of setting up a Sphinx documentation project from scratch. You will learn how to create a GitHub repository, set up a virtual environment, install Sphinx and its extensions, and configure your project. Follow these steps to get your documentation project up and running.</p>
+<ol class="arabic">
+<li><p><strong>Create a Public GitHub Repository</strong></p>
+<blockquote>
+<div><p>First, create a new public repository on GitHub to host your Sphinx documentation project.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Clone the Repository Locally</strong></p>
+<blockquote>
+<div><p>Clone the newly created repository to your local machine using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;your-repository-url&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Set Up a Virtual Environment</strong></p>
+<blockquote>
+<div><p>Move into the cloned repository folder:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;your-cloned-repository&gt;
+</pre></div>
+</div>
+<p>Then set up a virtual environment using either <cite>venv</cite> or <cite>virtualenv</cite>, adapting the command based on your Python version:</p>
+<ul class="simple">
+<li><p>To use <cite>venv</cite> (included in the Python standard library):</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>To use <cite>virtualenv</cite> (requires separate installation):</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3.10<span class="w"> </span>-m<span class="w"> </span>virtualenv<span class="w"> </span>env
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Activate the Virtual Environment</strong></p>
+<blockquote>
+<div><p>Activate the virtual environment to isolate your project’s dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>env/bin/activate
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Install Sphinx</strong></p>
+<blockquote>
+<div><p>Install Sphinx within your virtual environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Install Additional Extensions</strong></p>
+<blockquote>
+<div><p>Enhance your Sphinx setup with useful extensions:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx_rtd_theme<span class="w"> </span>sphinx-copybutton<span class="w"> </span>sphinx_code_tabs
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Create Sphinx Documentation</strong></p>
+<blockquote>
+<div><p>Initialize your Sphinx documentation project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It’s a good practice to separate source and build directories to keep everything organized.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Open the Project in Visual Studio Code</strong></p>
+<blockquote>
+<div><p>Launch Visual Studio Code in the project directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code<span class="w"> </span>.
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Activate the Virtual Environment in VS Code</strong></p>
+<blockquote>
+<div><p>Open a terminal in VS Code and activate your virtual environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>env/bin/activate
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Generate HTML Documentation</strong></p>
+<p>Build the HTML documentation to see the output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The generated <cite>index.html</cite> file will be located in the <cite>build/html</cite> directory.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To preview the latest version of the HTML page, remember to refresh your browser. If changes do not appear, first ensure that the build succeeded without errors. If the build is successful but changes are still not visible, try running the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>clean
+make<span class="w"> </span>html
+</pre></div>
+</div>
+<p>Then, open the new <cite>index.html</cite> file in the <cite>build/html</cite> directory to check the updated documentation.</p>
+</div>
+</li>
+<li><p><strong>Add Extensions to `conf.py`</strong></p>
+<p>Edit the <cite>conf.py</cite> file to include the extensions you installed:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx_rtd_theme&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx_copybutton&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx_code_tabs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Change the Theme</strong></p>
+<p>Set the theme for your documentation in <cite>conf.py</cite>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Configure Theme Options</strong></p>
+<p>Customize the theme options in <cite>conf.py</cite>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;logo_only&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;collapse_navigation&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;sticky_navigation&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;includehidden&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;navigation_depth&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;titles_only&#39;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Add a New Page</strong></p>
+<ol class="loweralpha simple">
+<li><p>Create a new <cite>.rst</cite> file for your page in the <cite>source</cite> directory:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>source/new_page.rst
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="2">
+<li><p>Add content to <cite>new_page.rst</cite>, starting with a title:</p></li>
+</ol>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">New Page Title</span>
+<span class="gh">==============</span>
+
+<span class="gh">New Page Subtitle</span>
+<span class="gh">-----------------</span>
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="3">
+<li><p>Update the <cite>toctree</cite> directive in <cite>index.rst</cite> to include your new page:</p></li>
+</ol>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+    <span class="nc">:maxdepth:</span> 2
+    <span class="nc">:caption:</span> Contents
+
+    new_page.rst
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Sphinx to Read the Docs: Complete Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="page_two.html" class="btn btn-neutral float-right" title="How to Write Documentation with reStructuredText" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Luca Sidoti.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

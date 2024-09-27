@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Write Documentation with reStructuredText &mdash; Sphinx to Read the Docs: Complete Guide 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/code-tabs.css?v=1bc26e2f" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script src="_static/code-tabs.js?v=c983d12e"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deploying to Read the Docs" href="page_three.html" />
+    <link rel="prev" title="Setting Up Sphinx" href="page_one.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Sphinx to Read the Docs: Complete Guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="page_one.html">Setting Up Sphinx</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Write Documentation with reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#headings">Headings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text-formatting">Text Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#blocks">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-blocks">Custom Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lists">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#figures-and-images">Figures and Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-blocks">Code Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tabs">Tabs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-and-best-practices">Tips and Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page_three.html">Deploying to Read the Docs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx to Read the Docs: Complete Guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to Write Documentation with reStructuredText</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/page_two.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-write-documentation-with-restructuredtext">
+<h1>How to Write Documentation with reStructuredText<a class="headerlink" href="#how-to-write-documentation-with-restructuredtext" title="Link to this heading"></a></h1>
+<p>This guide will help you understand how to format and structure your documentation using <strong>reStructuredText (RST)</strong>. RST is the markup language used by Sphinx and other tools to generate clean and organized documentation.</p>
+<p>For more details, refer to the official <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText documentation</a>.</p>
+<p>—</p>
+<section id="headings">
+<h2>Headings<a class="headerlink" href="#headings" title="Link to this heading"></a></h2>
+<p>reStructuredText supports multiple levels of headings. Here are a few examples:</p>
+<ul>
+<li><p><strong>Level 1 Heading</strong> (with <cite>=</cite> symbols below the heading):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">This is a Level 1 Heading</span>
+<span class="gh">=========================</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> The <cite>=</cite> symbols must be at least as long as the heading text.</p>
+</li>
+<li><p><strong>Level 2 Heading</strong> (with <cite>-</cite> symbols below the heading):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">This is a Level 2 Heading</span>
+<span class="gh">-------------------------</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> The <cite>-</cite> symbols must be at least as long as the heading text.</p>
+</li>
+<li><p><strong>Level 3 Heading</strong> (with <cite>~</cite> symbols below the heading):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">This is a Level 3 Heading</span>
+<span class="gh">~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> The <cite>~</cite> symbols must be at least as long as the heading text.</p>
+</li>
+</ul>
+<p>—</p>
+</section>
+<section id="text-formatting">
+<h2>Text Formatting<a class="headerlink" href="#text-formatting" title="Link to this heading"></a></h2>
+<ul>
+<li><p><strong>Bold Text</strong>: Use double asterisks <cite>**</cite> around the text.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gs">**This is bold**</span>
+</pre></div>
+</div>
+<p><strong>This is bold</strong></p>
+</li>
+<li><p><em>Italic Text</em>: Use single asterisks <cite>*</cite> around the text.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="ge">*This is italic*</span>
+</pre></div>
+</div>
+<p><em>This is italic</em></p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Monospace</span> <span class="pre">Text</span></code>: Use double backticks around code or filenames.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="s">``code_block.py``</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">code_block.py</span></code></p>
+</li>
+<li><p>Hyperlinks: You can link to external URLs using this syntax:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="s">`reStructuredText </span><span class="si">&lt;https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html&gt;</span><span class="s">`_</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a></p>
+</li>
+</ul>
+<p>—</p>
+</section>
+<section id="blocks">
+<h2>Blocks<a class="headerlink" href="#blocks" title="Link to this heading"></a></h2>
+<p>There are different types of blocks to highlight important information:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span>
+    This is a note block. Use it to provide additional information.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a note block. Use it to provide additional information.</p>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">warning</span><span class="p">::</span>
+    <span class="gs">**Warning**</span>: This is a warning block. Use it to alert the reader to something important!
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Warning</strong>: This is a warning block. Use it to alert the reader to something important!</p>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">error</span><span class="p">::</span>
+    <span class="gs">**Error**</span>: This block is for highlighting errors or critical information.
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p><strong>Error</strong>: This block is for highlighting errors or critical information.</p>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tip</span><span class="p">::</span>
+    This is a tip block. Use it to provide helpful advice.
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This is a tip block. Use it to provide helpful advice.</p>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">important</span><span class="p">::</span>
+    This is an important block. Use it to emphasize key points.
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is an important block. Use it to emphasize key points.</p>
+</div>
+<p>—</p>
+</section>
+<section id="custom-blocks">
+<h2>Custom Blocks<a class="headerlink" href="#custom-blocks" title="Link to this heading"></a></h2>
+<p>You can define your own custom blocks to present additional content with icons or visual markers.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> Custom Block Title
+
+    This is a custom block. Use it to highlight key sections of your documentation.
+</pre></div>
+</div>
+<div class="admonition-custom-block-title admonition">
+<p class="admonition-title">Custom Block Title</p>
+<p>This is a custom block. Use it to highlight key sections of your documentation.</p>
+</div>
+<p>—</p>
+</section>
+<section id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Link to this heading"></a></h2>
+<p>You can create tables in reStructuredText using two common formats:</p>
+<ol class="arabic">
+<li><p><strong>Grid Tables</strong></p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------+------------+----------+
+<span class="o">|</span> Header row, column 1   | Header 2   | Header 3 |
++========================+============+==========+
+<span class="o">|</span> body row 1, column 1   | column 2   | column 3 |
++------------------------+------------+----------+
+<span class="o">|</span> body row 2             | Cells may span        |
++------------------------+-----------------------+
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Header row, column 1</p></th>
+<th class="head"><p>Header 2</p></th>
+<th class="head"><p>Header 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>body row 1, column 1</p></td>
+<td><p>column 2</p></td>
+<td><p>column 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>body row 2</p></td>
+<td colspan="2"><p>Cells may span</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic" start="2">
+<li><p><strong>Simple Tables</strong></p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>====================  ==========  ==========
+Header row, column 1  Header 2    Header 3
+====================  ==========  ==========
+body row 1, column 1  column 2    column 3
+body row 2            Cells may span columns
+====================  ======================
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Header row, column 1</p></th>
+<th class="head"><p>Header 2</p></th>
+<th class="head"><p>Header 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>body row 1, column 1</p></td>
+<td><p>column 2</p></td>
+<td><p>column 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>body row 2</p></td>
+<td colspan="2"><p>Cells may span columns</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>—</p>
+</section>
+<section id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Link to this heading"></a></h2>
+<p>reStructuredText supports different types of lists, including:</p>
+<ol class="arabic">
+<li><p><strong>Unordered Lists:</strong></p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> This is an item
+<span class="m">*</span> This is another item
+
+  <span class="m">*</span> Nested item
+  <span class="m">*</span> Another nested item
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This is an item</p></li>
+<li><p>This is another item</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nested item</p></li>
+<li><p>Another nested item</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Ordered Lists:</strong></p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">1.</span> First item
+<span class="m">2.</span> Second item
+
+  <span class="m">1.</span> Nested item
+  <span class="m">2.</span> Another nested item
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>First item</p></li>
+<li><p>Second item</p></li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Nested item</p></li>
+<li><p>Another nested item</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<p>—</p>
+</section>
+<section id="figures-and-images">
+<h2>Figures and Images<a class="headerlink" href="#figures-and-images" title="Link to this heading"></a></h2>
+<p>You can include figures or images in your documentation using the following syntax:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> /path/to/image.png
+   <span class="nc">:align:</span> center
+   <span class="nc">:width:</span> 90%
+   <span class="nc">:alt:</span> Image description
+
+   This is an example of a figure with a caption.
+</pre></div>
+</div>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/image1.jpg"><img alt="Image description" src="_images/image1.jpg" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">This is an example of a figure with a caption.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>For regular images without a caption, use the <cite>image</cite> directive:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> /path/to/image.png
+   <span class="nc">:align:</span> center
+   <span class="nc">:alt:</span> Example image
+</pre></div>
+</div>
+<img alt="Example image" class="align-center" src="_images/image2.jpg" />
+<p>—</p>
+</section>
+<section id="code-blocks">
+<h2>Code Blocks<a class="headerlink" href="#code-blocks" title="Link to this heading"></a></h2>
+<p>To include code snippets, use the <cite>code-block</cite> directive:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+    <span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Sphinx!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Sphinx!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For bash commands, specify the language as <cite>bash</cite>:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> bash
+
+    echo &quot;Hello, Sphinx&quot;
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, Sphinx&quot;</span>
+</pre></div>
+</div>
+<p>—</p>
+</section>
+<section id="tabs">
+<h2>Tabs<a class="headerlink" href="#tabs" title="Link to this heading"></a></h2>
+<p>You can organize content into tabs using the <cite>tab</cite> directive from the Sphinx tabs extension:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tabs</span><span class="p">::</span>
+
+<span class="p">    ..</span> <span class="ow">tab</span><span class="p">::</span> Python
+
+<span class="p">        ..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+            <span class="k">def</span> <span class="nf">example</span><span class="p">():</span>
+                <span class="k">return</span> <span class="s2">&quot;Python code block&quot;</span>
+
+<span class="p">    ..</span> <span class="ow">tab</span><span class="p">::</span> Bash
+
+<span class="p">        ..</span> <span class="ow">code-block</span><span class="p">::</span> bash
+
+            echo &quot;This is a Bash code block&quot;
+</pre></div>
+</div>
+<div class="tabs docutils container" data-tabgroup="">
+<ul class="tabbar">
+<li class="tabbutton selected" data-id="0" onclick="sphinx_code_tabs_onclick(this)">
+Python</li><li class="tabbutton" data-id="1" onclick="sphinx_code_tabs_onclick(this)">
+Bash</li></ul><div class="tab texttab selected" data-id="0">
+<div class="docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">example</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;Python code block&quot;</span>
+</pre></div>
+</div>
+</div>
+</div><div class="tab texttab" data-id="1">
+<div class="docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;This is a Bash code block&quot;</span>
+</pre></div>
+</div>
+</div>
+</div></div><p>—</p>
+</section>
+<section id="tips-and-best-practices">
+<h2>Tips and Best Practices<a class="headerlink" href="#tips-and-best-practices" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Use <strong>RST</strong> consistently to maintain clean documentation structure.</p></li>
+<li><p>Take advantage of Sphinx extensions for advanced formatting and functionality.</p></li>
+<li><p>Keep sections modular for easy navigation and readability.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="page_one.html" class="btn btn-neutral float-left" title="Setting Up Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="page_three.html" class="btn btn-neutral float-right" title="Deploying to Read the Docs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Luca Sidoti.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
