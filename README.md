@@ -16,4 +16,5 @@ Welcome to the **Sphinx to Read the Docs** guide! This repository provides a ste
 
 For a full guide, including detailed commands and configurations, please visit the documentation hosted on **Read the Docs**:
 
-[Documentation (in progress) on Read the Docs]()
+[Link to the Read the Docs documentation](https://sphinx-to-read-the-docs-complete-guide.readthedocs.io)
+
