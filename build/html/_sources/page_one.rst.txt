@@ -60,7 +60,8 @@ In this section, we'll guide you through the process of setting up a Sphinx docu
 
     .. code-block:: bash
 
-        pip install sphinx_rtd_theme sphinx-copybutton sphinx_code_tabs
+        pip install sphinx_rtd_theme sphinx-copybutton sphinx_code_tabs sphinx-new-tab-link
+
 
 7. **Create Sphinx Documentation**
 
@@ -116,7 +117,7 @@ In this section, we'll guide you through the process of setting up a Sphinx docu
 
     .. code-block:: python
 
-        extensions = ['sphinx_rtd_theme', 'sphinx_copybutton', 'sphinx_code_tabs']
+        extensions = ['sphinx_rtd_theme', 'sphinx_copybutton', 'sphinx_code_tabs', 'sphinx_new_tab_link']
 
 12. **Change the Theme**
 
