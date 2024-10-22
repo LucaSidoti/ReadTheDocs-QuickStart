@@ -14,7 +14,7 @@ release = '1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_rtd_theme', 'sphinx_copybutton', 'sphinx_code_tabs', 'sphinx_new_tab_link']
+extensions = ['sphinx_rtd_theme', 'sphinx_copybutton', 'sphinx_code_tabs', 'sphinx_new_tab_link','sphinx_togglebutton']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -36,3 +36,4 @@ html_theme_options = {
 }
 
 html_static_path = ['_static']
+html_css_files = ['custom.css']

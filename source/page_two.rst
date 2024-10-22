@@ -142,6 +142,53 @@ You can define your own custom blocks to present additional content with icons o
 
 ---
 
+Toggle Button
+-------------
+
+You can create collapsible blocks using the toggle button for content that you don't want to reveal immediately.
+
+.. code-block:: rst
+
+  .. admonition:: This will be shown
+    :class: hint
+
+    .. toggle:: Click to expand
+
+      This content will be hidden until the toggle is clicked. You can add more details here, such as code snippets, images, or additional explanations.
+
+
+.. admonition:: Hint
+  :class: hint
+
+  .. toggle:: Click to expand
+
+    This content will be hidden until the toggle is clicked. You can add more details here, such as code snippets, images, or additional explanations.
+
+.. important::
+
+  A new file called *custom.css* need to be added in *source/_static* with the following content:
+
+  .. code-block:: bash
+    
+    .hint {
+      border-color: var(--pst-color-success);
+      > .admonition-title {
+        &:before {
+          background-color: var(--pst-color-success);
+        }
+
+        &:after {
+          color: var(--pst-color-success);
+          content: var(--pst-icon-admonition-hint);
+        }
+      }
+    }
+
+  The *conf.py* need to be updated with ``html_css_files = ['custom.css']``. 
+
+
+---
+
 Tables
 ------
 

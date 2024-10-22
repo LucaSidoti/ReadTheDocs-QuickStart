@@ -117,7 +117,7 @@ In this section, we'll guide you through the process of setting up a Sphinx docu
 
     .. code-block:: python
 
-        extensions = ['sphinx_rtd_theme', 'sphinx_copybutton', 'sphinx_code_tabs', 'sphinx_new_tab_link']
+        extensions = ['sphinx_rtd_theme', 'sphinx_copybutton', 'sphinx_code_tabs', 'sphinx_new_tab_link', 'sphinx_togglebutton']
 
 12. **Change the Theme**
 

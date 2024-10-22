@@ -36,6 +36,7 @@ To publish your documentation on Read the Docs, follow these steps to complete t
       sphinx-copybutton==0.5.2
       sphinx-code-tabs==0.5.5
       sphinx-new-tab-link==0.6.1
+      sphinx-togglebutton==0.3.2
 
 3. **Push Your Changes to GitHub**
 
