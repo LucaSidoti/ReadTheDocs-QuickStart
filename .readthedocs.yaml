@@ -12,6 +12,6 @@ python:
 sphinx:
   configuration: source/conf.py
 
-output_base:
-  paths:
-    pdf: _build/pdf
+formats:
+  - epub
+  - pdf
