@@ -23,9 +23,8 @@ To publish your documentation on Read the Docs, follow these steps to complete t
       sphinx:
         configuration: source/conf.py
 
-      output_base:
-         paths:
-            pdf: _build/pdf
+      # formats:
+      #   - pdf
 
 2. **Create a `requirements.txt` File**
 
