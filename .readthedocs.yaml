@@ -14,3 +14,11 @@ formats:
 python:
   install:
     - requirements: requirements.txt
+
+build:
+  apt_packages:
+    - latexmk
+    - texlive-latex-extra
+    - texlive-fonts-recommended
+    - texlive-xetex
+    - texlive-science  # Optional, adds extra LaTeX packages
