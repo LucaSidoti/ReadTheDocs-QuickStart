@@ -19,14 +19,6 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-# Conditional logic to disable problematic extensions for LaTeX builder
-import sys
-from sphinx.application import Sphinx
-
-if isinstance(globals().get('app'), Sphinx) and app.builder.name == "latex":
-    extensions.remove('sphinx_code_tabs')  # Disable unsupported extensions
-    extensions.remove('sphinx_new_tab_link')  # Add more if needed
-
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'
 
@@ -41,11 +33,3 @@ html_theme_options = {
 
 html_static_path = ['_static']
 html_css_files = ['custom.css']
-
-# -- LaTeX-specific configurations -------------------------------------------
-latex_elements = {
-    'papersize': 'a4paper',
-    'pointsize': '10pt',
-    'preamble': '',
-    'figure_align': 'htbp',
-}
