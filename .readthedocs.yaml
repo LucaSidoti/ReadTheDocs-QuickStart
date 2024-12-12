@@ -5,12 +5,12 @@ build:
   tools:
     python: "3.10"
 
-sphinx:
-  configuration: source/conf.py
-
 python:
   install:
     - requirements: requirements.txt
 
-formats:
-  - pdf
+sphinx:
+  configuration: source/conf.py
+
+# formats:
+#   - pdf
